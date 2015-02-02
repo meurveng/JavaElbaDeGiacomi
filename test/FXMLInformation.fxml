@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="window" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1442.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.InformationController">
+   <center>
+      <TabPane prefHeight="370.0" prefWidth="315.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Vivienda">
+               <content>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <center>
+                        <GridPane style="-fx-opacity: -fx-disabled-opacity;" BorderPane.alignment="CENTER">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="2.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="50.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" percentHeight="2.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <GridPane disable="true" GridPane.columnIndex="2">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <CheckBox fx:id="parrilla" mnemonicParsing="false" text="Parrilla" />
+                                    <CheckBox fx:id="servicios" mnemonicParsing="false" text="Servicios" GridPane.columnIndex="1" />
+                                    <CheckBox fx:id="telefono" disable="true" mnemonicParsing="false" text="Telefono" GridPane.rowIndex="2" />
+                                    <CheckBox fx:id="freezer" mnemonicParsing="false" text="Freezer" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <CheckBox fx:id="parque" mnemonicParsing="false" text="Parque" GridPane.rowIndex="1" />
+                                    <CheckBox fx:id="heladera" mnemonicParsing="false" text="Heladera" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <CheckBox fx:id="internet" mnemonicParsing="false" text="Internet" GridPane.rowIndex="3" />
+                                    <CheckBox fx:id="lavadero" mnemonicParsing="false" text="Lavadero" GridPane.rowIndex="4" />
+                                    <CheckBox fx:id="microondas" mnemonicParsing="false" text="Microondas" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <CheckBox fx:id="cafetera" mnemonicParsing="false" text="Cafetera" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <CheckBox fx:id="jovenes" mnemonicParsing="false" text="Jovenes" GridPane.rowIndex="5" />
+                                    <CheckBox fx:id="cable" mnemonicParsing="false" text="Television" GridPane.rowIndex="6" />
+                                    <CheckBox fx:id="aireAcondicionado" mnemonicParsing="false" text="Aire acondicionado" GridPane.rowIndex="7" />
+                                    <CheckBox fx:id="alarma" mnemonicParsing="false" text="Alarma" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                                    <CheckBox fx:id="tostadora" mnemonicParsing="false" text="Tostadora" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <CheckBox fx:id="gasNatural" mnemonicParsing="false" text="Gas natural" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <CheckBox fx:id="garaje" mnemonicParsing="false" text="Garaje" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <CheckBox fx:id="entradaAuto" mnemonicParsing="false" text="Entrada de auto" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                                    <CheckBox fx:id="wifi" mnemonicParsing="false" text="Wi-Fi" GridPane.rowIndex="8" />
+                                    <CheckBox fx:id="mascotas" mnemonicParsing="false" text="Mascotas" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <CheckBox fx:id="estacionamiento" mnemonicParsing="false" text="Estacionamiento" GridPane.rowIndex="9" />
+                                    <CheckBox fx:id="estacionamientoTechado" mnemonicParsing="false" text="Estacio. techado" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                    <CheckBox fx:id="ventilador" mnemonicParsing="false" text="Ventilador" GridPane.rowIndex="10" />
+                                    <CheckBox fx:id="rejas" mnemonicParsing="false" text="Rejas" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                    <CheckBox fx:id="calefon" mnemonicParsing="false" text="Calefon" GridPane.rowIndex="11" />
+                                    <CheckBox fx:id="estufa" mnemonicParsing="false" text="Estufa" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                                    <CheckBox fx:id="termotanque" mnemonicParsing="false" text="Termotanque" GridPane.rowIndex="12" />
+                                 </children>
+                              </GridPane>
+                              <TextArea fx:id="descripcion" editable="false" wrapText="true" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+                              <GridPane GridPane.columnIndex="1">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label id="label-negrita" text="Direccion" GridPane.rowIndex="3" />
+                                    <Label id="label-negrita" text="Nombre" GridPane.rowIndex="2" />
+                                    <Label id="label-negrita" text="Ambientes" GridPane.rowIndex="6" />
+                                    <Label id="label-negrita" text="Lugar" GridPane.rowIndex="4" />
+                                    <Label id="label-negrita" text="Habitaciones" GridPane.rowIndex="7" />
+                                    <Label id="label-negrita" text="Baños" GridPane.rowIndex="8" />
+                                    <Label id="label-negrita" text="Camas" GridPane.rowIndex="9" />
+                                    <Label id="label-negrita" text="M. terreno" GridPane.rowIndex="10" />
+                                    <Label id="label-negrita" text="M. edificados" GridPane.rowIndex="11" />
+                                    <Label fx:id="nombre" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label fx:id="direccion" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <Label fx:id="poblacion" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Label fx:id="ambientes" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <Label fx:id="habitaciones" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <Label fx:id="baños" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <Label fx:id="camas" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                    <Label fx:id="metrosTerreno" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                    <Label fx:id="metrosEdificados" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                                    <Label id="label-negrita" text="Catastral" GridPane.rowIndex="12" />
+                                    <Label fx:id="castral" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                                    <Label id="label-negrita" text="Codigo inmobiliaria" />
+                                    <Label id="label-negrita" text="Codigo Argenprop" GridPane.rowIndex="1" />
+                                    <Label fx:id="codigoInmobiliaria" text="Label" GridPane.columnIndex="1" />
+                                    <Label fx:id="codigoArgenprop" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label id="label-negrita" text="Tipo" GridPane.rowIndex="5" />
+                                    <Label fx:id="tipoCasa" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                 </children>
+                              </GridPane>
+                              <Label id="label-negrita" text="Descripcion" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                           </children>
+                        </GridPane>
+                     </center>
+                  </BorderPane>
+               </content>
+            </Tab>
+            <Tab text="Dueño">
+               <content>
+                  <GridPane>
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="2.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" percentHeight="2.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label id="label-negrita" text="Nombre completo" GridPane.columnIndex="1" />
+                        <Label id="label-negrita" text="Tipo de cuenta" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label id="label-negrita" text="Telefono" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label id="label-negrita" text="Numero de cuenta" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label id="label-negrita" text="Banco" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label id="label-negrita" text="Correo" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Label id="label-negrita" text="CBU" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Label fx:id="nombreDueño" text="Label" GridPane.columnIndex="2" />
+                        <Label fx:id="tipoCuenta" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Label fx:id="telefonoDueño" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Label fx:id="numeroCuenta" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <Label fx:id="banco" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                        <Label fx:id="correo" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                        <Label fx:id="cdu" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                        <CheckBox fx:id="venta" disable="true" mnemonicParsing="false" text="Venta" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <CheckBox fx:id="alquiler" disable="true" mnemonicParsing="false" text="Alquiler" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <CheckBox fx:id="alquilerTemporario" disable="true" mnemonicParsing="false" text="Alquiler temporario" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <CheckBox fx:id="dueñoPesos" disable="true" mnemonicParsing="false" text="Dueño pesos" GridPane.columnIndex="3" />
+                        <CheckBox fx:id="dueñoDolares" disable="true" mnemonicParsing="false" text="Dueño dolares" GridPane.columnIndex="4" />
+                        <CheckBox fx:id="inmobiliariaPesos" disable="true" mnemonicParsing="false" text="Inmobiliaria pesos" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Label id="label-negrita" text="Permuta" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <CheckBox fx:id="inmobiliariaDolares" disable="true" mnemonicParsing="false" text="Inmobiliaria dolares" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <TextArea fx:id="permuta" editable="false" prefHeight="200.0" prefWidth="200.0" wrapText="true" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="10" />
+                        <Label id="label-negrita" text="Numero de documento" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="documento" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+               </content>
+            </Tab>
+          <Tab text="Precios">
+               <content>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <center>
+                        <GridPane BorderPane.alignment="CENTER">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="2.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" percentHeight="2.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label id="label-negrita" text="Diciembre" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" />
+                              <Label id="label-negrita" text="Enero" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" />
+                              <Label id="label-negrita" text="Febrero" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.halignment="CENTER" />
+                              <Label id="label-negrita" text="Primera quincena" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label id="label-negrita" text="Segunda quincena" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label id="label-negrita" text="Semana" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Label id="label-negrita" text="Dia" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <Label id="label-negrita" text="Primera quincena" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                              <Label id="label-negrita" text="Segunda quincena" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                              <Label id="label-negrita" text="Semana" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                              <Label id="label-negrita" text="Dia" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                              <Label id="label-negrita" text="Primera quincena" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                              <Label id="label-negrita" text="Segunda quincena" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                              <Label id="label-negrita" text="Semana" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                              <Label id="label-negrita" text="Dia" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                              <Label id="label-negrita" text="Marzo" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+                              <Label id="label-negrita" text="Otros" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+                              <Label id="label-negrita" text="Servicios" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+                              <Label id="label-negrita" text="Primera quincena" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                              <Label id="label-negrita" text="Segunda quincena" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                              <Label id="label-negrita" text="Semana" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                              <Label id="label-negrita" text="Dia" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                              <Label id="label-negrita" text="Anual" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                              <Label id="label-negrita" text="Fin de semana" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                              <Label id="label-negrita" text="Sabana dos plazas" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+                              <Label id="label-negrita" text="Sabana una plaza" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+                              <Label id="label-negrita" text="Toallon y tallas" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+                              <CheckBox fx:id="comision" mnemonicParsing="false" onAction="#calculateComision" text="Aplicar comision" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="11" />
+                              <Label fx:id="primeraQuincenaDiciembre" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Label fx:id="segundaQuincenaDiciembre" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <Label fx:id="semanaDiciembre" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                              <Label fx:id="diaDiciembre" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                              <Label fx:id="primeraQuincenaEnero" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                              <Label fx:id="segundaQuincenaEnero" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                              <Label fx:id="semanaEnero" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                              <Label fx:id="diaEnero" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                              <Label fx:id="primeraQuincenaFebrero" text="Label" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                              <Label fx:id="segundaQuincenaFebrero" text="Label" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+                              <Label fx:id="semanaFebrero" text="Label" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+                              <Label fx:id="diaFebrero" text="Label" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+                              <Label fx:id="primeraQuincenaMarzo" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                              <Label fx:id="segundaQuincenaMarzo" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                              <Label fx:id="semanaMarzo" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                              <Label fx:id="diaMarzo" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                              <Label fx:id="primeraQuincenaOtro" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+                              <Label fx:id="segundaQuincenaOtro" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+                              <Label fx:id="sabanaDosPlazas" text="Label" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+                              <Label fx:id="sabanaUnaPlaza" text="Label" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+                              <Label fx:id="toallas" text="Label" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+                           </children>
+                        </GridPane>
+                     </center>
+                  </BorderPane>
+               </content></Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <stylesheets>
+      <URL value="@../css/theme.css" />
+      <URL value="@../css/information.css" />
+   </stylesheets>
+   <bottom>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="170.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" prefHeight="152.0" GridPane.rowIndex="1">
+               <content>
+                  <BorderPane fx:id="borderPane" style="-fx-background-color: #FFFFFF;" />
+               </content>
+            </ScrollPane>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button id="button-principal" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#exportar" text="Exportar vivienda..." GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </bottom>
+   <left>
+      <BorderPane minWidth="500.0" prefHeight="500.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <center>
+            <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </left>
+</BorderPane>

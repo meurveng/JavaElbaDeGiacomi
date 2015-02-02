@@ -1,0 +1,38 @@
+#filtro{
+	-fx-background-color: #EFEFEF;
+	-fx-border-width: 0 1px 0 0 ;
+	-fx-border-color:#E7E7E7
+}
+#filtro .text-field, #filtro .combo-box, #filtro .slider .track{
+    -fx-background-color: #FFFFFF;
+}
+#imagen{
+	-fx-padding: 0 0 0 15px;
+}
+#borderPadding{
+	-fx-padding: 0 0 0 15px;
+}
+#titulo{
+	-fx-font-weight: bold;
+	-fx-font-size: 18px;
+}
+#labelDescripcion{
+	-fx-font-weight: bold;
+	-fx-padding: 0 0 0 15px;
+}
+#grid{
+	-fx-vgap: 15px;
+	-fx-hgap: 10px;
+}
+#apartment{
+	-fx-padding: 15px 0;
+	-fx-background-color: #FFFFFF;
+	-fx-border-width: 0.5px 0px;
+	-fx-border-color: #BABABA;
+}
+#apartment:hover{
+	-fx-background-color: #F5F5F5;
+}
+#apartment:focused{
+	-fx-background-color: #6A91B1;
+}
