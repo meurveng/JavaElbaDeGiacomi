@@ -29,6 +29,7 @@ public class Main extends Application {
     private Stage optionsStage;
     private Stage informationStage;
     private Stage addModifyStage;
+    private Stage loginStage;
     private PrincipalController principalController;
     private OptionsController optionsController;
     private InformationController informationController;
@@ -117,6 +118,22 @@ public class Main extends Application {
                 System.gc();
             });
             informationStage.show();
+        } catch (Exception e) {
+            //tratar la excepción
+        }
+    }
+    
+    public void openLogin() {
+        try {
+            FXMLLoader loader = new FXMLLoader(Main.class.getResource("FXMLLogin.fxml"));
+            Parent root = loader.load();
+            loginStage = new Stage();
+            loginStage.setTitle("Iniciar sesión");
+            Scene scene = new Scene(root);
+            loginStage.setScene(scene);
+            loginStage.setResizable(false);
+            loginStage.initOwner(principalStage);
+            loginStage.show();
         } catch (Exception e) {
             //tratar la excepción
         }

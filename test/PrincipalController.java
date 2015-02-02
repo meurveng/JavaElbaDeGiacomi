@@ -226,17 +226,18 @@ public class PrincipalController implements Initializable {
         });
         crear.setGraphic(crearLabel);
         
+        
         Label preferenciasLabel = new Label("Preferencias");
         preferenciasLabel.setOnMouseClicked((MouseEvent event) -> {
             openOptions();
         });
         preferencias.setGraphic(preferenciasLabel);
         
-        /*Label iniciarSesionLabel = new Label("Iniciar sesión");
+        Label iniciarSesionLabel = new Label("Iniciar sesión");
         iniciarSesionLabel.setOnMouseClicked((MouseEvent event) -> {
-            openAddModify();
+            controller.openLogin();
         });
-        iniciarSesion.setGraphic(crearLabel);*/
+        iniciarSesion.setGraphic(iniciarSesionLabel);
         
         order.setItems(observableArrayList("Creación", "Nombre", "Lugar", "Camas"));
         order.setValue("Creación");

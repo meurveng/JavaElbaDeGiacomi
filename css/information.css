@@ -1,11 +1,11 @@
-#label-negrita{
-	-fx-font-weight: bold;
-}
 #border-image{
-	-fx-padding: 0 5px;
+    -fx-padding: 0 5px;
+}
+.border-pane{
+    -fx-background-color: #FFFFFF;
 }
 #border-image:hover{
-	-fx-background-color: #6A91B1;
+    -fx-background-color: #6A91B1;
 }
 .check-box:disabled {
     -fx-opacity: 100;

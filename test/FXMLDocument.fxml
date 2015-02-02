@@ -18,6 +18,7 @@
         <menus>
           <Menu fx:id="crear" mnemonicParsing="false" />
           <Menu fx:id="preferencias" mnemonicParsing="false" />
+            <Menu fx:id="iniciarSesion" mnemonicParsing="false" />
         </menus>
       </MenuBar>
    </top>

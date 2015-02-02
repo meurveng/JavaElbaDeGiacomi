@@ -5,6 +5,9 @@
 	-fx-background-color: #A2B3C4;
 	-fx-background-radius: 0;
 }
+#label-negrita{
+	-fx-font-weight: bold;
+}
 .scroll-bar .track{
    -fx-background-color: #BAC7D3;
 }
@@ -99,6 +102,15 @@
     -fx-background-color:#EAEAEA;
 }
 .text-field:focused {
+    -fx-background-color:#FFFFFF;
+    -fx-border-color: #40B0E4;
+    -fx-border-width: 2px;
+}
+.text-area {
+    -fx-background-radius: 0;
+    -fx-background-color:#EAEAEA;
+}
+.text-area:focused {
     -fx-background-color:#FFFFFF;
     -fx-border-color: #40B0E4;
     -fx-border-width: 2px;
